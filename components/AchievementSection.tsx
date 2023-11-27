@@ -38,7 +38,8 @@ const AchievementSection = () => {
                             includeComma
                             animateToNumber={parseInt(achievement.value)}
                             locale="en-US"
-                            className=" text-white text-4xl font-bold"
+                            // className="text-white text-4xl font-bold"
+                            fontStyle={{ color: "#fff", fontSize: '32px', fontWeight: 'bold'}}
                             configs={((_, index) => {
                                 return{
                                     mass:1,

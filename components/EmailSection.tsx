@@ -16,7 +16,7 @@ const EmailSection = (props: Props) => {
             message: e.target.message.value,
         }
         const JSONdata = JSON.stringify(data);
-        const endpoint = "/app/api/send";
+        const endpoint = "/api/send";
 
         //Form the request fro sending data to the server
         const options = {
@@ -72,7 +72,7 @@ const EmailSection = (props: Props) => {
                 <label htmlFor="message" className=" text-white block text-sm mb-2 font-medium">Message</label>
                 <textarea name="message" id="message" cols={30} rows={10} className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] to-gray-100 text-sm rounded-lg block w-full p-2.5" placeholder='let talk about...' />
                </div>
-               <button className=" bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full" type='submit'>Send Message</button>
+               <button className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full" type='submit'>Send Message</button>
                {
                 // if the email was submitted successfully, show a success message.
                 emailSubmitted && (

@@ -59,7 +59,7 @@ const EmailSection = (props: Props) => {
             </div>
         </div>
         <div className=" mb-6">
-            <form action="" className=" flex flex-col" onSubmit={handleSubmit}>
+            <form className=" flex flex-col" onSubmit={handleSubmit}>
                <div className="">
                <label htmlFor="email" className=" text-white mb-2 block 1 text-sm font-medium">Your Email</label>
                 <input type="email" id='email' name='email' required placeholder="shinxSoft@gmail.com" className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] to-gray-100 text-sm rounded-lg block w-full p-2.5" />
